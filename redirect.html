@@ -4,28 +4,32 @@
 <html><head>
   <!-- Event snippet for salespage - REVCONTENT -->
 <img src="//trends.revcontent.com/conv.php?t=CgC1gWvkA%2F7VNCZD%2BtJkHFFjzkrLzV%2FEsCzB7tVvKj3oMicLI8yfLQt5jo9I1Yft" />
-<!-- Global site tag - MDR (gtag.js) - Google Ads: 454181183 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-454181183"></script>
+<!-- Global site tag (gtag.js) - Google Ads: 398925642 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-398925642"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-454181183');
-</script>
-<!-- Event snippet for checkout - MDR conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-454181183/9qEvCPaeqvABEL-CydgB'});
+  gtag('config', 'AW-398925642');
 </script>
 
-<<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VGDT8H2MP7"></script>
+<!-- Event snippet for Venda Video Gasolina conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VGDT8H2MP7');
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-398925642/anR3COamsosCEMq-nL4B',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
 </script>
 
 
